@@ -1,0 +1,21 @@
+name = "Test Game"
+version = "0.1"
+intro = "src/intro.lean"
+
+
+[[worlds]]
+name = "Logic World"
+id = 1
+levels = [
+    "src/world1/level1.lean",
+]
+
+
+[[worlds]]
+name = "Set Theory World"
+id = 2
+parents = [1]
+levels = [
+    "src/world2/level1.lean",
+    "src/world2/level2.lean",
+]
